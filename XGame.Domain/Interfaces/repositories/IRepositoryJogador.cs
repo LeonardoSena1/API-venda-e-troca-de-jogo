@@ -1,5 +1,6 @@
 ﻿using System;
 using XGame.Domain.Arguments.Jogador;
+using XGame.Domain.Entities;
 
 namespace XGame.Domain.Interfaces.repositories
 {
@@ -7,7 +8,7 @@ namespace XGame.Domain.Interfaces.repositories
     {
         AutenticarJogadorResponse AutenticarJogador(AutenticarJogadorRequest request);
 
-        Guid AdicionarJogador(AdicionarJogadorRequest Request); 
+        Guid AdicionarJogador(Jogador jogador); 
 
     }
 }
